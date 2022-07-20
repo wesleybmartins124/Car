@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Routes from "./routes/index";
+import { NavigationContainer } from '@react-navigation/native'
+import Routes from "./routes/routes";
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Gurgel app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+        <StatusBar backgroundColor="#1d1d2e" barStyle="light-content" translucent={false} />
+        <Routes/>
+  </NavigationContainer>
   );
 }
 
