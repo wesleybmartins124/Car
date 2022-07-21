@@ -1,36 +1,56 @@
-import React, { useState, useContext } from 'react';
-import { View, Text, StyleSheet,Image,TextInput,TouchableOpacity,ActivityIndicator} from 'react-native';
-import LottieView from  "lottie-react-native";
+import React from "react"
+import { StyleSheet, Image, Text, View, ImageBackground } from "react-native"
 
-
-export default function Splash(){
-  return(
-    <View style={styles.container}>
-       <Image style={styles.waves}
-      source={require('../assets/DarkWave.gif')}/>
-       <Image style={styles.logo}
-      source={require('../assets/gurgel.png')}/>
-      </View>
-  );
+export default function SplashScreenGurgel() {
+  return (
+    <View style={styles.SplashScreenGurgel}>
+      <Image
+        style={styles._85668DarkWaves1}
+        source={require('../assets/DarkWave.gif')}
+      />
+      <Image style={styles.Vector2}source={require('../assets/Vector2.png')}/>
+      <Image style={styles.Vector1} source={require('../assets/Vector1.png')} />
+      <Image style={styles.Gurgel1}  source={require('../assets/gurgel.png')}/>
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
-
-  container:{
-    flex:1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#C2DDF0'
+  SplashScreenGurgel: {
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    position: "relative",
+    backgroundColor: "rgba(194,221,240,1)",
+    width: "100%",
+    height: "100%",
   },
-  waves:{
-    flex:1,
-        width:"80%",
-        height:"100%",
-        marginTop:"50%",
-        justifyContent:"center"
+  _85668DarkWaves1: {
+    position: "absolute",
+    top: 328,
+    left: 12,
+    width: 400,
+    height: 532,
   },
-  logo:{
-    width:"100%",
-    height:"50%"
-  }
-});
+  Vector2: {
+    position: "absolute",
+    top: 255,
+    left: 38,
+    width: 307.29,
+    height: 485,
+  },
+  Vector1: {
+    position: "absolute",
+    top: 69,
+    left: 25,
+    width: 378.83,
+    height: 99.95,
+  },
+  Gurgel1: {
+    position: "absolute",
+    top: 182,
+    left: 0,
+    width: 151,
+    height: 78,
+  },
+})
