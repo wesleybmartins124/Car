@@ -1,7 +1,11 @@
-import React from "react"
+import React , { useState } from "react"
+import SignUp from './SignUp'
 import { StyleSheet, Image, Text, View, ImageBackground } from "react-native"
+import { useNavigation } from '@react-navigation/native'
 
 export default function SplashScreenGurgel() {
+
+
   return (
     <View style={styles.SplashScreenGurgel}>
       <Image
@@ -10,8 +14,11 @@ export default function SplashScreenGurgel() {
       />
       <Image style={styles.Vector2}source={require('../assets/Vector2.png')}/>
       <Image style={styles.Vector1} source={require('../assets/Vector1.png')} />
-      <Image style={styles.Gurgel1}  source={require('../assets/gurgel.png')}/>
+      <Image style={styles.Gurgel1}  source={require('../assets/gurgel.png')}
+      />
+   
     </View>
+    
   )
 }
 
