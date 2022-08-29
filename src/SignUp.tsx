@@ -18,11 +18,9 @@ export default function SignUp() {
         </Text>
         <Image
           style={styles.Animation_500_l5vsdmj81}
-          source={{
-            uri: "https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/2w6q7m71639-45%3A34?alt=media&token=247b524f-5b01-4c3a-a0f9-1a63358ed78a",
-          }}
+          source={require('../assets/animation_gps.gif')}
         />
-        <View style={styles.ButtonGoogle}>
+        <View style={[styles.ButtonGoogle, styles.elevation]}>
           <Image
             style={styles.IconGoogle}
             source={{
@@ -45,17 +43,9 @@ export default function SignUp() {
 
 const styles = StyleSheet.create({
   SignUp: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "flex-start",
-    alignItems: "flex-start",
-    paddingTop: 11,
-    paddingBottom: 25,
-    paddingLeft: 11,
-    paddingRight: 11,
+    flex:1,
     backgroundColor: "rgba(21,67,96,1)",
-    width: 360,
-    height: 800,
+
   },
   Group2103: {
     display: "flex",
@@ -68,9 +58,7 @@ const styles = StyleSheet.create({
     marginBottom: 13,
   },
   multiple1: {
-    main: "Txt1063",
-    seg1: "[object Object]",
-    seg2: "[object Object]",
+
   },
   Txt8510: {
     fontSize: 15,
@@ -98,17 +86,16 @@ const styles = StyleSheet.create({
     paddingBottom: 13,
     paddingLeft: 23,
     paddingRight: 23,
-    marginBottom: 13,
     borderRadius: 15,
     backgroundColor: "white",
     /*  linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)) */
-    borderWidth: 1,
-    borderStyle: "solid",
-    borderColor: "rgba(255,",
-    shadowColor: "rgba(0,0,0,0.25)",
-    elevation: 0,
-    shadowOffset: { width: 0, height: 4 },
+    shadowOffset: { width: 10, height: 4 },
     width: 327,
+    height: 48,
+  },
+  elevation: {  
+    shadowColor: '#fff',  
+    elevation: 20,  
   },
   IconGoogle: {
     width: 16,
@@ -146,9 +133,7 @@ const styles = StyleSheet.create({
     marginBottom: 26,
     borderRadius: 15,
     backgroundColor: "rgba(255, 255, 255, 0.1)",
-    borderWidth: 1,
-    borderStyle: "solid",
-    borderColor: "rgba(255,",
+
     shadowColor: "rgba(0,0,0,0.25)",
     elevation: 0,
     shadowOffset: { width: 0, height: 4 },

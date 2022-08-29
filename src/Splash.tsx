@@ -1,5 +1,4 @@
 import React , { useState } from "react"
-import SignUp from './SignUp'
 import { StyleSheet, Image, Text, View, ImageBackground } from "react-native"
 import { useNavigation } from '@react-navigation/native'
 

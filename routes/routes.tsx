@@ -1,6 +1,6 @@
 import React from "react"
-import Splash from './Splash';
-import SignUp from './SignUp';
+import Splash from '../src/Splash';
+import SignUp from '../src/SignUp';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
